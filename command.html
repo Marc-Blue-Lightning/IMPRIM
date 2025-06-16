@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Commande - MK4IMPRIM </title>
+  
+  <link rel="stylesheet" href="css/commande.css">
+
+  <link rel="stylesheet" href="">
+  <!-- Custom styles for this template -->
+  <!-- responsive style -->
+  
+
+
+<body>
+   <div class="hero_area">
+    <!-- header section strats -->
+    <header>
+      <div class="container">
+        <h1>KVDIMPRIM</h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Accueil</a>
+            </li>
+            <li><a href="command.html">Commandez</a>
+            </li>
+            <li> <a href="produit.html">NOS PRODUITS</a>
+            </li>
+            <li>
+              <a href="tarif.html">TARIF</a>
+            </li>
+            <li>
+              <a href="contact copy.html"> contact</a>
+        
+            </li>
+          </ul>
+        </nav>
+        <div class="contact-info">
+          <p>appel  au +243819678935</p>
+
+        </div>
+
+      </div>
+      
+    </header>
+
+    <h4>commandez maintenant</h4>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+
+  
+
+  <form id="orderForm">
+
+    <div class="section">
+      <h2>1. Choix du produit</h2>
+      <label for="produit">Produit :</label>
+      <select id="produit" required>
+        <option value="">-- Sélectionner --</option>
+        <option>Cartes de visite</option>
+        <option>Flyers / Affiches</option>
+        <option>Brochures</option>
+        <option>T-shirts personnalisés</option>
+        <option>Posters</option>
+        <option>Impression de documents PDF</option>
+      </select>
+    </div>
+
+    <div class="section">
+      <h2>2. Téléversement du fichier</h2>
+      <label for="file">Importer votre fichier :</label>
+      <input type="file" id="file" accept=".pdf,.png,.jpg" required>
+      <div class="preview" id="preview"></div>
+    </div>
+
+    <div class="section">
+      <h2>3. Personnalisation</h2>
+      <label for="papier">Type de papier :</label>
+      <select id="papier">
+        <option>Standard</option>
+        <option>Mat</option>
+        <option>Brillant</option>
+      </select>
+
+      <label for="format">Format :</label>
+      <select id="format">
+        <option>A4</option>
+        <option>A3</option>
+        <option>Carré</option>
+      </select>
+
+      <label for="rectoVerso">Impression :</label>
+      <select id="rectoVerso">
+        <option>Recto</option>
+        <option>Recto/Verso</option>
+      </select>
+
+      <label for="copies">Nombre de copies :</label>
+      <input type="number" id="copies" min="1" value="1">
+    </div>
+
+    <div class="section">
+      <h2>4. Aperçu du rendu</h2>
+      <button type="button" onclick="validerMaquette()">Valider la maquette</button>
+      <p id="maquetteStatus"></p>
+    </div>
+
+    <div class="section">
+      <h2>5. Coordonnées de livraison</h2>
+      <label>Nom et prénom :</label>
+      <input type="text" required>
+
+      <label>Adresse :</label>
+      <textarea required></textarea>
+
+      <label>Téléphone :</label>
+      <input type="tel" required>
+
+      <label>Email :</label>
+      <input type="email" required>
+    </div>
+
+    <div class="section">
+      <h2>6. Mode de livraison</h2>
+      <select required>
+        <option value="">-- Choisissez --</option>
+        <option>Standard (3-5 jours)</option>
+        <option>Express (24h)</option>
+        <option>Retrait en boutique</option>
+      </select>
+    </div>
+    <br><br><br><br><br><br><br>
+  
+    <div class="section">
+      <h2>7. Paiement sécurisé</h2>
+      <p>Moyens acceptés: M-pesa uniquement</p>
+      <label >pour m-pesa le numero</label>
+      <a href="tel:+243 977 827 737">+243 0831511015</a>
+
+      <P> NB: l'impression se fera uniquement si vous confirme votre paye </P>
+      <label>Récapitulatif :</label>
+      <textarea readonly>Votre commande sera résumée ici...</textarea>
+      <button type="submit">Payer et lancer l'impression</button>
+    </div>
+    
+
+  </form>
+  <br><br><br><br><br>
+  <footer>
+
+     <div class="footer-container">
+            <div class= "address">
+                <h3>Adresse</h3>
+                 <h2>📍 Nos coordonnées</h2>
+      <p><strong>Adresse :</strong> 12 ieme rue limité</p>
+      <p><strong>Téléphone :</strong> +</p>243 831511015
+      <p><strong>Email :</strong> Kvdboy7@gmail.com</p>
+      <p><strong>Horaires :</strong> Lun - Ven : 9h00 à 18h00</p>
+                <div class= "social-icons">
+                    <a href= "#"><i class= "fab fa-facebook-f"></i></a>
+                    <a href= »# »><i class= "fab fa-twitter"></i></a>
+                    <a href= »# »><i class= "fab fa-linkedin-in"></i></a>
+                    <a href= "#"><i class= "fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class= »links »>
+                <h3>Liens</h3>
+      
+                <ul>
+                    <li><a href= "#"><i class= "fab fa-facebook-f"></i>fecebook</a></li>
+                    <li><a href= "#"><i class= "fab fa-twitter"></i>twitter</a></li>
+                    <li><a href= "#"><i class= "fab fa-instagram"></i>fa-instagram</a></li>
+                    <li><a href= "#"><i class= "fab fa-facebook-f"></i>wtp</a></li>
+
+  
+
+
+            </div>
+
+            <div class= "info">
+                <h3>Info</h3>
+                      <p>Ce site a été réaliseé par des étudiants de l'université de kinshasa comme projet semestriel 
+                  de l'annéé pour le compte du cour de web 1
+    
+                </p>
+                <ul>Le site a été réaliseé par :
+                  <li>KIVIDI OLIVIER</li>
+                  <li>MUFUTA MARC</li>
+                  <li>KELEKELE DAVID</li>
+                  <li>KUTUKWENDA BEROGER</li>
+                  <li>KITOKO LAGRACE</li>
+                  <br><br><br>
+                  2025 KVDBOY & MK4IMPRIM
+                  Partenaire officiel
+                </ul>
+            </div>
+
+            <div class= "subscribe">
+                <h3>S’abonner</h3>
+                <input type="email" placeholder= "Entrez votre email">
+                <button type= "button">S’abonner</button>
+            </div>
+            </footer>
+
+  <script>
+    // Aperçu de l’image
+    document.getElementById('file').addEventListener('change', function(event) {
+      const file = event.target.files[0];
+      const preview = document.getElementById('preview');
+      preview.innerHTML = '';
+
+      if (file && file.type.startsWith('image/')) {
+        const img = document.createElement('img');
+        img.src = URL.createObjectURL(file);
+        img.style.maxWidth = '200px';
+        preview.appendChild(img);
+      } else {
+        preview.textContent = 'Aperçu non disponible pour ce type de fichier.';
+      }
+    });
+
+    function validerMaquette() {
+      document.getElementById("maquetteStatus").textContent = "Maquette validée ✅";
+    }
+
+    // Gestion du formulaire
+    document.getElementById('orderForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert("Commande validée et impression lancée !");
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+ body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      
+    background-image: url(../images/MK4_BACKGROUND1.jpg);
+    background-size: cover;
+    background-position: center;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #007bff;
+    }
+    .produits-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .produit {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .produit:hover {
+      transform: scale(1.02);
+    }
+    .produit h3 {
+      margin-top: 0;
+      color: #333;
+    }
+    .produit p {
+      font-size: 14px;
+      color: #555;
+    }
+    .icon {
+      background-image: url(image/ph.jpeg);
+      font-size: 40px;
+      margin-bottom: 10px;
+      color: #007bff;
+    }
+    header{
+      background-color:black;
+      color: white;
+      padding: 10px0;
+    }
+    .container{
+      width: 80%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+        nav ul {
+      list-style: none;
+    }
+    nav ul li{
+      display: inline;
+      margin-right: 20px;
+
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    .contact-info{
+      font-size: 14px;
+    }
+    main{
+      text-align: center;
+      padding: 50px 0;
+
+    }
+    .get-in-touch h2{
+      font-size: 24px;
+    }
+    Footer {
+    Background-color : black ;
+    Color : white ;
+    Padding : 20px ;
+}
+
+.footer-container {
+    Display : flex ;
+    Justify-content : space-between ;
+}
+
+.footer-container div {
+    Flex : 1 ;
+    Margin : 10px ;
+}
+
+H3 {
+    Border-bottom : 2px solid red ;
+}
+
+.social-icons a {
+    Color : white ;
+    Margin-right : 10px ;
+}
+
+.social-icons a :hover {
+    Color : red ;
+}
+
+Input[type=email] {
+    Padding : 10px ;
+    Margin-right : 5px ;
+}
+
+Button {
+    Padding : 10px 15px ;
+    Background-color : red ;
+    Color : white ;
+    Border : none ;
+    Cursor : pointer ;
+}
+
+Button :hover {
+    Background-color : darkred ;
+}
